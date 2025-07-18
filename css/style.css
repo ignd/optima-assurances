@@ -507,8 +507,8 @@ ul {
 .service-card ul li::before {
     content: '•';
     color: var(--accent);
-    position: absolute;
-    left: 0;
+    position: relative;
+    padding-left: 20px;
     font-weight: bold;
 }
 
