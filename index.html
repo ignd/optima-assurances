@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optima Assurances - Courtier en assurances au Senegal | Votre sécurité, notre priorité</title>
+    <meta name="description" content="Optima Assurances, courtier en assurances au Senegal, propose des solutions personnalisées pour particuliers et professionnels. Devis gratuit.">
+    <meta name="keywords" content="assurance Senegal, courtier assurance, optima assurances, devis assurance, assurance habitation, assurance auto">
+    
+    <!-- Préchargement des ressources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    
+    <!-- Feuilles de style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <style>
+        /* Styles spécifiques pour la section Services */
+        .services-section {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .services-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .services-header {
+            margin-bottom: 50px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary);
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-intro {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+        
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-card {
+                padding: 25px;
+            }
+        }
+
+        /* Hero section avec image */
+        .hero {
+            background: linear-gradient(rgba(0, 102, 204, 0.7), rgba(0, 77, 153, 0.7)), url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 180px 0;
+            margin-bottom: 50px;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 120px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- En-tête du site -->
+    <header role="banner" class="fixed-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Retour à l'accueil - Optima Assurances">
+                <img src="images/logo-optima.png" alt="Logo Optima Assurances" width="150" height="60" loading="lazy">
+            </a>
+            
+            <nav role="navigation" aria-label="Navigation principale">
+                <button class="mobile-menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Menu mobile">
+                    <span class="menu-icon" aria-hidden="true"></span>
+                </button>
+                
+                <ul id="main-nav" class="nav-list">
+                    <li><a href="index.html" class="active" aria-current="page">Accueil</a></li>
+                    <li><a href="about.html">Qui sommes-nous ?</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="expertises.html">Nos expertises</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="main-content" role="main" class="main-with-header">
+<!-- Section Hero modifiée -->
+<section class="hero" aria-labelledby="hero-heading">
+    <div class="container hero-container">
+        <h1 id="hero-heading">Votre sécurité, notre priorité</h1>
+        <p class="hero-subtitle">Optima Assurances est votre courtier en assurances au Senegal, offrant des solutions sur mesure pour protéger ce qui compte le plus pour vous.</p>
+        
+        <div class="hero-cta">
+            <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+            <a href="tel:+221775331299" class="btn btn-light">+221 77 533 12 99</a>
+        </div>
+    </div>
+</section>
+
+        <!-- Section Services -->
+        <section class="services-section" aria-labelledby="services-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="services-title">Nos services</h2>
+                    <p class="section-intro">Découvrez comment nous simplifions votre expérience assurance</p>
+                </header>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Négociation de tarifs</h3>
+                        <p>Nous obtenons pour vous les meilleurs tarifs auprès de nos partenaires assureurs grâce à notre pouvoir de négociation.</p>
+                        <ul>
+                            <li>Économies garanties</li>
+                            <li>Comparaison transparente</li>
+                            <li>Pas de frais cachés</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Assistance administrative</h3>
+                        <p>Nous gérons pour vous toutes les démarches administratives liées à votre assurance.</p>
+                        <ul>
+                            <li>Dossiers simplifiés</li>
+                            <li>Suivi personnalisé</li>
+                            <li>Gestion des renouvellements</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3>Support sinistres</h3>
+                        <p>Un accompagnement complet en cas de sinistre pour faire valoir vos droits.</p>
+                        <ul>
+                            <li>Assistance 24h/24</li>
+                            <li>Expertise dédiée</li>
+                            <li>Réclamation facilitée</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-headset"></i>
+                        </div>
+                        <h3>Conseil personnalisé</h3>
+                        <p>Une analyse approfondie de vos besoins pour une protection optimale.</p>
+                        <ul>
+                            <li>Audit gratuit</li>
+                            <li>Solutions sur mesure</li>
+                            <li>Suivi régulier</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expertises -->
+        <section class="expertises-section" aria-labelledby="expertises-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="expertises-title">Nos expertises</h2>
+                    <p class="section-intro">Des solutions adaptées à chaque besoin</p>
+                </header>
+
+                <div class="expertise-content">
+                    <div class="expertise-text">
+                        <h3>Nos domaines d'expertise</h3>
+                        <p>Optima Assurances couvre tous les domaines d'assurance pour une protection complète.</p>
+                        
+                        <div class="expertise-cta">
+                            <a href="contact.html" class="btn btn-primary">Demander un devis</a>
+                            <a href="tel:+221775331299" class="btn btn-outline">Nous appeler</a>
+                        </div>
+                    </div>
+
+                    <div class="expertise-grid">
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3>Responsabilité Civile</h3>
+                            <p>Protection contre les dommages causés à des tiers</p>
+                        </article>
+
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3>Immobilier</h3>
+                            <ul>
+                                <li>Tous risques chantiers (TRC)</li>
+                                <li>RC Décennale</li>
+                                <li>Multirisque Habitation</li>
+                            </ul>
+                        </article>
+
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Assurance maladie</h3>
+                            <p>Couvertures santé adaptées</p>
+                        </article>
+
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3>Automobile</h3>
+                            <p>Assurances tous risques et au tiers</p>
+                        </article>
+
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <h3>Aviation</h3>
+                            <p>Solutions pour aéronefs</p>
+                        </article>
+
+                        <article class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h3>Incendie</h3>
+                            <p>Protection contre les risques d'incendie</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Section 1 - À propos -->
+                <div class="footer-section">
+                    <h3>Optima Assurances</h3>
+                    <p>"Votre sécurité, notre priorité"</p>
+                    <address>
+                        <p>Lot 187 Bis Ouakam Niayes bi</p>
+                        <p>Cité El Hadji Malick Sy OUAKAM-DAKAR</p>
+                    </address>
+                </div>
+                
+                <!-- Section 2 - Contact -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +221 77 533 12 99</li>
+                        <li><i class="fas fa-envelope"></i> contact@optima-assurance.com</li>
+                        <li><i class="fas fa-envelope"></i> commercial@optima-assurance.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Section 3 - Réseaux sociaux -->
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="website">www.optima-assurance.com</p>
+                </div>
+            </div>
+            
+            <!-- Bas de footer -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Optima Assurances. Tous droits réservés.</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Navigation secondaire">
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>

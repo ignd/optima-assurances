@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Optima Assurances</title>
+    <meta name="description" content="Contactez Optima Assurances à Dakar pour toute demande de devis, d'information ou d'assurance.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navigation accessibilité -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- En-tête du site -->
+    <header role="banner" class="fixed-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Retour à l'accueil - Optima Assurances">
+                <img src="images/logo-optima.png" alt="Logo Optima Assurances" width="150" height="60">
+            </a>
+            
+            <nav role="navigation" aria-label="Navigation principale">
+                <button class="mobile-menu-btn" aria-expanded="false" aria-controls="main-nav" aria-label="Menu mobile">
+                    <span class="menu-icon" aria-hidden="true"></span>
+                </button>
+                
+                <ul id="main-nav" class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">Qui sommes-nous ?</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="expertises.html">Nos expertises</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main id="main-content" role="main" class="main-with-header">
+        <section class="contact-section">
+            <div class="container">
+                <h1>Contactez-nous</h1>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Nos coordonnées</h2>
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <address>
+                                Lot 187 Bis Ouakam Niayes bi<br>
+                                Cité El Hadji Malick Sy<br>
+                                OUAKAM-DAKAR, Sénégal
+                            </address>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <p><a href="tel:+221775331299">+221 77 533 12 99</a></p>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:contact@optima-assurance.com">contact@optima-assurance.com</a></p>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <p><a href="mailto:commercial@optima-assurance.com">commercial@optima-assurance.com</a></p>
+                        </div>
+                        
+                        <div class="business-hours">
+                            <h3><i class="fas fa-clock"></i> Horaires d'ouverture</h3>
+                            <p>Lundi - Vendredi : 8h00 - 18h00</p>
+                            <p>Samedi : 9h00 - 13h00</p>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Suivez-nous</h3>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form" aria-labelledby="contact-form-title">
+                        <h2 id="contact-form-title" class="visually-hidden">Formulaire de contact</h2>
+                        
+                        <div class="form-group">
+                            <label for="lastname">Nom <span class="required">*</span></label>
+                            <input type="text" id="lastname" name="lastname" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="firstname">Prénom <span class="required">*</span></label>
+                            <input type="text" id="firstname" name="firstname" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Objet <span class="required">*</span></label>
+                            <select id="subject" name="subject" required aria-required="true">
+                                <option value="">Sélectionnez...</option>
+                                <option value="quote">Demande de devis</option>
+                                <option value="question">Question générale</option>
+                                <option value="claim">Déclaration de sinistre</option>
+                                <option value="auto">Assurance automobile</option>
+                                <option value="health">Assurance santé</option>
+                                <option value="property">Assurance habitation</option>
+                                <option value="other">Autre demande</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Décrivez votre demande en détail..."></textarea>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Optima Assurances</h3>
+                    <p class="tagline">"Votre sécurité, notre priorité"</p>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> Lot 187 Bis Ouakam Niayes bi</p>
+                        <p>Cité El Hadji Malick Sy OUAKAM-DAKAR</p>
+                    </address>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact rapide</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-phone"></i> +221 77 533 12 99</li>
+                        <li><i class="fas fa-envelope"></i> contact@optima-assurance.com</li>
+                        <li><i class="fas fa-envelope"></i> commercial@optima-assurance.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens utiles</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="services.html">Nos services</a></li>
+                        <li><a href="expertises.html">Domaines d'expertise</a></li>
+                        <li><a href="contact.html">Demande de contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Optima Assurances. Tous droits réservés.</p>
+                <nav class="footer-nav" aria-label="Navigation secondaire">
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="cookies.html">Gestion des cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/main.js" defer></script>
+    <script src="js/contact-form.js" defer></script>
+</body>
+</html>
