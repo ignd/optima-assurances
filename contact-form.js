@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     requiredFields.forEach(field => {
       const errorElement = document.createElement('p');
       errorElement.className = 'error-message';
-      errorElement.style.color = '#e74c3c';
+      errorElement.style.color = '#fc0505ff';
       errorElement.style.marginTop = '5px';
       errorElement.style.fontSize = '0.9rem';
       errorElement.style.display = 'none';
